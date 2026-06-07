@@ -109,21 +109,40 @@ const Hero = () => {
                 <div className="relative w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] flex items-center justify-center select-none flex-shrink-0">
                     {/* Orbiting Container for Top-Left Indigo Circle */}
                     <div className="absolute inset-0 animate-orbit-cw z-0 pointer-events-none">
-                        <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full bg-indigo-600 shadow-md animate-pulse-soft"></div>
+                        {/* Indigo Circle with rotating glowing border */}
+                        <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white">
+                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3s' }}></div>
+                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3s' }}></div>
+                            <div className="relative w-full h-full rounded-full bg-indigo-600 z-10"></div>
+                        </div>
                     </div>
                     
                     {/* Orbiting Container for Bottom-Right Purple Circle */}
                     <div className="absolute inset-0 animate-orbit-ccw z-30 pointer-events-none">
-                        <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full bg-purple-500 shadow-md animate-pulse-soft"></div>
+                        {/* Purple Circle with rotating glowing border */}
+                        <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white">
+                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3.5s' }}></div>
+                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3.5s' }}></div>
+                            <div className="relative w-full h-full rounded-full bg-purple-500 z-10"></div>
+                        </div>
                     </div>
                     
-                    {/* Main Circular Profile Image */}
-                    <div className="relative w-[76%] h-[76%] rounded-full border-[8px] border-indigo-600 overflow-hidden z-20 shadow-xl bg-slate-50 flex items-center justify-center">
-                        <img
-                            src="hero_avatar.jpg"
-                            alt="Gerald S. Bual"
-                            className="w-full h-full object-cover object-center scale-[1.03] hover:scale-105 transition-transform duration-500"
-                        />
+                    {/* Main Circular Profile Image with rotating glowing border */}
+                    <div className="relative w-[76%] h-[76%] rounded-full flex items-center justify-center p-[6px] overflow-hidden z-20 shadow-2xl bg-white">
+                        {/* The rotating gradient light */}
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_40%,#6366f1_70%,#a855f7_90%,transparent_100%)] animate-spin" style={{ animationDuration: '4s' }}></div>
+                        
+                        {/* Glow effect behind */}
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_40%,#6366f1_70%,#a855f7_90%,transparent_100%)] animate-spin blur-md opacity-70" style={{ animationDuration: '4s' }}></div>
+                        
+                        {/* Inner content (Profile Image) */}
+                        <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-50 flex items-center justify-center z-10">
+                            <img
+                                src="hero_avatar.jpg"
+                                alt="Gerald S. Bual"
+                                className="w-full h-full object-cover object-center scale-[1.03] hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
                     </div>
                 </div>
             </main>
