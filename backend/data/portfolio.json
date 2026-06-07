@@ -1,0 +1,144 @@
+{
+  "profile": {
+    "name": "Gerald S. Bual",
+    "title": "Virtual Assistant | Bookkeeping | Data Entry | UI/UX Designer",
+    "tagline": "Empowering businesses with efficient virtual assistance, precise bookkeeping, and creative design solutions",
+    "bio": "I'm a versatile professional with expertise in virtual assistance, bookkeeping, data entry, appointment setting, social media marketing, and UI/UX design. I combine technical skills with creative problem-solving to help businesses streamline their operations and enhance their digital presence.",
+    "email": "bual.rald@gmail.com",
+    "phone": "+63 981 527 1695",
+    "location": "Purok 13, San Vicente, Panabo City, Davao del Norte, Philippines, 8105",
+    "social": {
+      "github": "https://github.com/geraldbual",
+      "linkedin": "https://linkedin.com/in/geraldbual",
+      "twitter": "https://twitter.com/geraldbual"
+    }
+  },
+  "skills": [
+    {
+      "category": "Virtual Assistant & Admin",
+      "technologies": [
+        { "name": "QuickBooks Online", "level": 90 },
+        { "name": "Email Management", "level": 95 },
+        { "name": "Calendar Management", "level": 90 },
+        { "name": "Google Suites", "level": 85 },
+        { "name": "MS Office Suites", "level": 85 }
+      ]
+    },
+    {
+      "category": "Design & Creative",
+      "technologies": [
+        { "name": "Figma", "level": 85 },
+        { "name": "Canva", "level": 90 },
+        { "name": "UI/UX Design", "level": 80 },
+        { "name": "Graphic Design", "level": 85 },
+        { "name": "Social Media Content", "level": 90 }
+      ]
+    },
+    {
+      "category": "Technical & Development",
+      "technologies": [
+        { "name": "Website Creation", "level": 75 },
+        { "name": "Social Media Marketing", "level": 85 },
+        { "name": "SEO Basics", "level": 70 },
+        { "name": "Data Entry", "level": 95 },
+        { "name": "Bookkeeping", "level": 85 }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "DSWD - School Based Cash for Work Program",
+      "position": "Office Cashier Assistant",
+      "period": "May 2025 - July 2025",
+      "description": "Assisted with processing payments, organizing financial records, handling student inquiries, and supporting daily cash transactions in a professional work environment.",
+      "responsibilities": [
+        "Processed payments and managed cash transactions",
+        "Organized and maintained financial records",
+        "Handled student inquiries professionally",
+        "Supported daily office operations"
+      ],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "company": "Freelance Academy",
+      "position": "Virtual Assistant Training",
+      "period": "April 2025",
+      "description": "Completed comprehensive Virtual Assistant training focused on bookkeeping using QuickBooks Online, digital marketing, social media management, and various administrative skills.",
+      "responsibilities": [
+        "Mastered QuickBooks Online for bookkeeping",
+        "Learned financial record management and bank reconciliations",
+        "Developed skills in social media marketing and content creation",
+        "Gained expertise in graphic design, article writing, and video editing",
+        "Studied SEO, Facebook boosting, and website development"
+      ],
+      "featured": true
+    }
+  ],
+  "education": [
+    {
+      "school": "Davao del Norte State College",
+      "degree": "Bachelor of Science in Information System",
+      "period": "2022 - 2025",
+      "description": "Focused on business and technology, emphasizing system development, databases, and IT management.",
+      "current": true
+    },
+    {
+      "school": "Panabo City Senior High School",
+      "degree": "Accountancy, Business and Administration (ABM)",
+      "period": "June 2021 - 2022",
+      "description": "Developed knowledge and skills in accounting, business, finance, and management, preparing for entrepreneurship and business-related courses."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Virtual Assistant Portfolio",
+      "description": "Comprehensive showcase of virtual assistant services including bookkeeping, data entry, appointment setting, and social media management capabilities.",
+      "technologies": ["QuickBooks", "Google Suites", "Canva", "Social Media"],
+      "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design Projects",
+      "description": "Collection of user interface and user experience design projects created using Figma and Canva, focusing on modern, user-friendly designs.",
+      "technologies": ["Figma", "Canva", "UI/UX Design"],
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Social Media Marketing Campaigns",
+      "description": "Developed and managed social media marketing campaigns including content creation, graphic design, and Facebook advertising strategies.",
+      "technologies": ["Canva", "Facebook Ads", "Content Creation", "SEO"],
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Bookkeeping & Financial Management",
+      "description": "Managed financial records, prepared charts of accounts, created invoices and bills, and performed bank reconciliations using QuickBooks Online.",
+      "technologies": ["QuickBooks Online", "Excel", "Financial Management"],
+      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop",
+      "featured": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Professional"
+    },
+    {
+      "name": "Filipino",
+      "proficiency": "Native"
+    }
+  ],
+  "references": {
+    "name": "Rosalyn A. Sumi-og",
+    "position": "Manager in an Agency Company",
+    "phone": "+63 981 527 1695",
+    "email": "rosalynsumiog12@gmail.com"
+  }
+}

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-dark-50 font-sans;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-display font-bold text-center mb-4;
+    @apply bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl text-dark-300 text-center mb-12 max-w-2xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 rounded-lg font-semibold text-white;
+    @apply bg-gradient-to-r from-primary-600 to-primary-500;
+    @apply hover:from-primary-500 hover:to-primary-400;
+    @apply transform transition-all duration-300;
+    @apply hover:scale-105 hover:shadow-lg hover:shadow-primary-500/50;
+    @apply active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 rounded-lg font-semibold;
+    @apply border-2 border-primary-500 text-primary-400;
+    @apply hover:bg-primary-500/10;
+    @apply transform transition-all duration-300;
+    @apply hover:scale-105;
+    @apply active:scale-95;
+  }
+  
+  .card {
+    @apply bg-dark-900/50 backdrop-blur-sm border border-dark-800;
+    @apply rounded-xl p-6;
+    @apply transform transition-all duration-300;
+    @apply hover:border-primary-500/50 hover:shadow-lg hover:shadow-primary-500/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400;
+    @apply bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500;
+}
