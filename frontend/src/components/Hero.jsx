@@ -55,23 +55,9 @@ const Hero = () => {
                         animation: blink 0.8s step-end infinite;
                     }
 
-                    @keyframes orbit-clockwise {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
-                    }
-                    @keyframes orbit-counter-clockwise {
-                        0% { transform: rotate(360deg); }
-                        100% { transform: rotate(0deg); }
-                    }
                     @keyframes pulse-soft {
                         0%, 100% { transform: scale(1); }
                         50% { transform: scale(1.12); }
-                    }
-                    .animate-orbit-cw {
-                        animation: orbit-clockwise 24s linear infinite;
-                    }
-                    .animate-orbit-ccw {
-                        animation: orbit-counter-clockwise 28s linear infinite;
                     }
                     .animate-pulse-soft {
                         animation: pulse-soft 4s ease-in-out infinite;
@@ -107,24 +93,18 @@ const Hero = () => {
                 </div>
 
                 <div className="relative w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] flex items-center justify-center select-none flex-shrink-0">
-                    {/* Orbiting Container for Top-Left Indigo Circle */}
-                    <div className="absolute inset-0 animate-orbit-cw z-0 pointer-events-none">
-                        {/* Indigo Circle with rotating glowing border */}
-                        <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white">
-                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3s' }}></div>
-                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3s' }}></div>
-                            <div className="relative w-full h-full rounded-full bg-indigo-600 z-10"></div>
-                        </div>
+                    {/* Indigo Circle with rotating glowing border (Stable Position) */}
+                    <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white z-0">
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3s' }}></div>
+                        <div className="relative w-full h-full rounded-full bg-indigo-600 z-10"></div>
                     </div>
                     
-                    {/* Orbiting Container for Bottom-Right Purple Circle */}
-                    <div className="absolute inset-0 animate-orbit-ccw z-30 pointer-events-none">
-                        {/* Purple Circle with rotating glowing border */}
-                        <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white">
-                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3.5s' }}></div>
-                            <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3.5s' }}></div>
-                            <div className="relative w-full h-full rounded-full bg-purple-500 z-10"></div>
-                        </div>
+                    {/* Purple Circle with rotating glowing border (Stable Position) */}
+                    <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white z-30">
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3.5s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3.5s' }}></div>
+                        <div className="relative w-full h-full rounded-full bg-purple-500 z-10"></div>
                     </div>
                     
                     {/* Main Circular Profile Image with rotating glowing border */}
