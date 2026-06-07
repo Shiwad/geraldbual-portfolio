@@ -54,6 +54,28 @@ const Hero = () => {
                     .animate-blink {
                         animation: blink 0.8s step-end infinite;
                     }
+
+                    @keyframes orbit-clockwise {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                    @keyframes orbit-counter-clockwise {
+                        0% { transform: rotate(360deg); }
+                        100% { transform: rotate(0deg); }
+                    }
+                    @keyframes pulse-soft {
+                        0%, 100% { transform: scale(1); }
+                        50% { transform: scale(1.12); }
+                    }
+                    .animate-orbit-cw {
+                        animation: orbit-clockwise 24s linear infinite;
+                    }
+                    .animate-orbit-ccw {
+                        animation: orbit-counter-clockwise 28s linear infinite;
+                    }
+                    .animate-pulse-soft {
+                        animation: pulse-soft 4s ease-in-out infinite;
+                    }
                 `}
             </style>
 
@@ -63,7 +85,7 @@ const Hero = () => {
                     <h1 className="text-center md:text-left text-4xl leading-[46px] md:text-5xl md:leading-[68px] font-bold text-slate-900 min-h-[46px] md:min-h-[68px]">
                         <span className="text-slate-900">{currentText}</span>
                         <span className="border-r-4 border-indigo-600 animate-blink ml-1">&nbsp;</span>
-                    </h1>
+                     </h1>
                     <p className="text-center md:text-left text-sm text-slate-500 max-w-lg mt-4 leading-relaxed">
                         Welcome to my portfolio! I'm really glad you're here. Feel free to explore my academic milestones, personal projects, and the creative solutions I build.
                     </p>
@@ -85,14 +107,18 @@ const Hero = () => {
                 </div>
 
                 <div className="relative w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] flex items-center justify-center select-none flex-shrink-0">
-                    {/* Top-Left Indigo Circle */}
-                    <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full bg-indigo-600 z-0 shadow-md"></div>
+                    {/* Orbiting Container for Top-Left Indigo Circle */}
+                    <div className="absolute inset-0 animate-orbit-cw z-0 pointer-events-none">
+                        <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full bg-indigo-600 shadow-md animate-pulse-soft"></div>
+                    </div>
                     
-                    {/* Bottom-Right Purple Circle */}
-                    <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full bg-purple-500 z-10 shadow-md"></div>
+                    {/* Orbiting Container for Bottom-Right Purple Circle */}
+                    <div className="absolute inset-0 animate-orbit-ccw z-30 pointer-events-none">
+                        <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full bg-purple-500 shadow-md animate-pulse-soft"></div>
+                    </div>
                     
                     {/* Main Circular Profile Image */}
-                    <div className="relative w-[76%] h-[76%] rounded-full border-[8px] border-indigo-600 overflow-hidden z-0 shadow-xl bg-slate-50 flex items-center justify-center">
+                    <div className="relative w-[76%] h-[76%] rounded-full border-[8px] border-indigo-600 overflow-hidden z-20 shadow-xl bg-slate-50 flex items-center justify-center">
                         <img
                             src="hero_avatar.jpg"
                             alt="Gerald S. Bual"
