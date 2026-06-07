@@ -93,17 +93,17 @@ const Hero = () => {
                 </div>
 
                 <div className="relative w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] flex items-center justify-center select-none flex-shrink-0">
-                    {/* Indigo Circle with rotating glowing border (Stable Position) */}
+                    {/* Indigo Circle with rotating glowing border (Stable Position, Cyan/Teal Glow) */}
                     <div className="absolute top-[6%] left-[6%] w-[22%] h-[22%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white z-0">
-                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3s' }}></div>
-                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#818cf8_60%,#4f46e5_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#22d3ee_60%,#0d9488_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#22d3ee_60%,#0d9488_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3s' }}></div>
                         <div className="relative w-full h-full rounded-full bg-indigo-600 z-10"></div>
                     </div>
                     
-                    {/* Purple Circle with rotating glowing border (Stable Position) */}
+                    {/* Purple Circle with rotating glowing border (Stable Position, Gold/Orange Glow) */}
                     <div className="absolute bottom-[6%] right-[6%] w-[18%] h-[18%] rounded-full flex items-center justify-center p-[2px] overflow-hidden shadow-lg animate-pulse-soft bg-white z-30">
-                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3.5s' }}></div>
-                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#c084fc_60%,#9333ea_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3.5s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#fbbf24_60%,#ea580c_90%,transparent_100%)] animate-spin" style={{ animationDuration: '3.5s' }}></div>
+                        <div className="absolute inset-0 w-[150%] h-[150%] left-[-25%] top-[-25%] bg-[conic-gradient(from_0deg,transparent_30%,#fbbf24_60%,#ea580c_90%,transparent_100%)] animate-spin blur-sm opacity-80" style={{ animationDuration: '3.5s' }}></div>
                         <div className="relative w-full h-full rounded-full bg-purple-500 z-10"></div>
                     </div>
                     
