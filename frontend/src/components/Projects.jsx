@@ -201,10 +201,10 @@ const Projects = () => {
           </div>
           
           {/* Dropdown Menu */}
-          <div className="relative" ref={dropdownRef}>
+          <div className="relative self-start sm:self-auto" ref={dropdownRef}>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="view-all-btn self-start sm:self-auto flex items-center gap-2"
+              className="view-all-btn flex items-center gap-2"
               aria-expanded={isDropdownOpen}
               aria-haspopup="listbox"
             >
@@ -222,7 +222,7 @@ const Projects = () => {
             </button>
 
             {isDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-xl z-30 overflow-hidden py-1.5">
+              <div className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-xl z-30 overflow-hidden py-1.5">
                 <button
                   onClick={() => {
                     setActiveCategory('Websites');
