@@ -48,23 +48,23 @@ export default function About() {
                         Hello there, my full name is Gerald Sumiog Bual. I'm an undergraduate student and a fourth-year Bachelor of Science in Information Systems student at Davao del Norte State College (DNSC). Living in San Vicente, Panabo City, I blend technical learning with creative execution to build solutions, utilizing technical skills like Microsoft Office, Figma design, and Video Editing.
                     </p>
 
-                    {/* Info Row (Larger & Auto-fitting to prevent email wrapping) */}
-                    <div className="flex flex-wrap items-start justify-between gap-y-6 gap-x-8 mt-8 pt-8 border-t border-slate-200/80">
-                        <div className="min-w-[60px]">
+                    {/* Info Row (Grid layout for mobile alignment, original Flexbox for desktop) */}
+                    <div className="grid grid-cols-2 md:flex md:flex-wrap md:items-start md:justify-between gap-y-6 gap-x-4 md:gap-x-8 mt-8 pt-8 border-t border-slate-200/80">
+                        <div className="min-w-0 md:min-w-[60px]">
                             <h4 className="text-xs font-bold text-slate-800 tracking-wider uppercase">Age</h4>
                             <p className="text-sm md:text-base text-slate-500 mt-1.5 font-light">22 Years</p>
                         </div>
-                        <div className="min-w-[110px]">
+                        <div className="min-w-0 md:min-w-[110px]">
                             <h4 className="text-xs font-bold text-slate-800 tracking-wider uppercase">Born In</h4>
                             <p className="text-sm md:text-base text-slate-500 mt-1.5 font-light">Panabo City, PH</p>
                         </div>
-                        <div className="min-w-[140px]">
+                        <div className="min-w-0 md:min-w-[140px]">
                             <h4 className="text-xs font-bold text-slate-800 tracking-wider uppercase">Phone</h4>
                             <p className="text-sm md:text-base text-slate-500 mt-1.5 font-light tracking-wide">+63 981 063 3870</p>
                         </div>
-                        <div className="min-w-[180px]">
+                        <div className="min-w-0 md:min-w-[180px]">
                             <h4 className="text-xs font-bold text-slate-800 tracking-wider uppercase">Email</h4>
-                            <p className="text-sm md:text-base text-slate-500 mt-1.5 font-light">bual.rald@gmail.com</p>
+                            <p className="text-sm md:text-base text-slate-500 mt-1.5 font-light break-all md:break-normal">bual.rald@gmail.com</p>
                         </div>
                     </div>
                 </div>
